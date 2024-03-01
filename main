@@ -1,0 +1,72 @@
+import random
+
+x = int(0)
+y = int
+valor = []
+
+while x < 6:
+    y= random.randint(1,26)
+    match y:
+            case 1:
+                valor.append("A")
+            case 2:
+                valor.append("B")
+            case 3:
+                valor.append("C")
+            case 4:
+                valor.append("D")
+            case 5:
+                valor.append("E")
+            case 6:
+                valor.append("F")
+            case 7:
+                valor.append("G")
+            case 8:
+                valor.append("H")
+            case 9:
+                valor.append("I")
+            case 10:
+                valor.append("J")
+            case 11:
+                valor.append("K")
+            case 12:
+                valor.append("L")
+            case 13:
+                valor.append("M")
+            case 14:
+                valor.append("N")
+            case 15:
+                valor.append("O")
+            case 16:
+                valor.append("P")
+            case 17:
+                valor.append("Q")
+            case 18:
+                valor.append("R")
+            case 19:
+                valor.append("S")
+            case 20:
+                valor.append("T")
+            case 21:
+                valor.append("U")
+            case 22:
+                valor.append("V")
+            case 23:
+                valor.append("W")
+            case 24:
+                valor.append("X")
+            case 25:
+                valor.append("Y")
+            case 26:
+                valor.append("Z")
+            case other:
+                valor[x] = "Error"
+    x += 1
+
+codigo = valor[0] + valor[1] + valor[2] + valor[3] + valor[4] + valor[5]
+print(codigo)
+senha = input("Digite o cógido acima ")
+if senha == codigo:
+    print("Você entrou na sala")
+else:
+    print("Senha incorreta")
